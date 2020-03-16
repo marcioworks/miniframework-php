@@ -7,12 +7,12 @@ class IndexController extends Action {
 
     public function index(){
         $this->view->dados = array('sofá','cama','mesa');
-        $this->render('index');
+        $this->render('index','layout1');
     }
 
     public function sobreNos(){
         $this->view->dados = array('notebook','celular','tablet');
-        $this->render('sobreNos');
+        $this->render('sobreNos','layout1');
     }
   
 }
