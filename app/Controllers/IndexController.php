@@ -12,7 +12,7 @@ class IndexController extends Action {
 
     public function sobreNos(){
         $this->view->dados = array('notebook','celular','tablet');
-        $this->render('sobreNos','layout1');
+        $this->render('sobreNos','layout2');
     }
   
 }
