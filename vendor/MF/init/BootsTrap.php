@@ -3,7 +3,9 @@ namespace MF\Init;
 
 abstract class BootsTrap{
     private $routes;
-   abstract protected function initRoutes();
+    
+    abstract protected function initRoutes();
+
     public function __construct() {
         $this->initRoutes();
         $this->run($this->getUrl());
